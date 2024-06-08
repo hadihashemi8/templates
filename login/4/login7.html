@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login7.css" />
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form action="">
+        <div class="user-box">
+          <input class="input" type="text" name="username" required  onkeydown="eror()"/>
+          <label for="">Username</label>
+          <p class="eror">xxx xx xxxxx xx xxxx</p>
+        </div>
+        <div class="user-box">
+          <input  class="password" type="password" name="password" required  onkeydown="eror2()" />
+          <label for="">Password</label>
+          <p class="eror2">xxx xx xxxxx xx xxxx</p>
+        </div>
+        <a onclick="login()" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+    <div class="modal">
+      <h1 id="title"></h1>
+    </div>
+<script src="/login7.js"></script>
+  </body>
+</html>

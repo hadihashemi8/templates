@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(13, 43, 82);
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.user {
+  margin: 20px;
+  position: relative;
+}
+.user input {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  border: solid 1px #838383;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+}
+.user label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  pointer-events: none;
+  color: #838383;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s;
+  padding: 0 3px;
+}
+.user input:focus ~ .first,
+.user input:valid ~ .first {
+  font-size: 12px;
+  top: -6px;
+  color: #03e9f4;
+  background-color: rgb(13, 43, 82);
+  border-left: solid 1px #03e9f4;
+  border-right: solid 1px #03e9f4;
+  padding: 0 6px;
+}
+
+
+.user input:focus ~ .last,
+.user input:valid ~ .last {
+  font-size: 12px;
+  top: -6px;
+  color: rgb(13, 43, 82);
+  background-color: #03e9f4;
+  border-radius: 2px;
+}
+.user input:focus,
+.user input:valid {
+  border-color: #03e9f4;
+}
+
+
+.btn {
+  padding: 7px 20px;
+  width: 120px;
+  background-color: transparent;
+  color: #03e9f4;
+  margin: 10px 0 30px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid #03e9f4;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: #03e9f4;
+  color: rgb(13, 43, 82);
+}

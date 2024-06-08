@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(imags/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+  height: 100%;
+}
+.right-menu {
+  width: 30%;
+  height: 550px;
+  background-color: rgba(40, 40, 41, 0.8);
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.welcome {
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 25%;
+  width: 200px;
+  font-size: 40px;
+}
+
+.disc {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 150px;
+}
+.call {
+  color: white;
+  position: absolute;
+  top: 250px;
+}
+.web-addres {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 130px;
+  left: 27%;
+}
+.lamp {
+  color: white;
+  width: 200px;
+  background-color: red;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 180px;
+  left: 25%;
+  animation: alert 2s infinite;
+}
+@keyframes alert {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: orangered;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+.menu {
+  width: 70%;
+  height: 100px;
+
+  float: right;
+}
+.m2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.m2 li a {
+  text-decoration: none;
+  color: black;
+}
+hr {
+  width: 60%;
+  position: absolute;
+  top: 100px;
+  left: 35%;
+}
